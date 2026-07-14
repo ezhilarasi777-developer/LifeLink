@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial,sans-serif;
+}
+body{
+    background: #f8f9fa;
+}
+nav{
+    background: #d32f2f;
+    color:white;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 15px 50px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin-left: 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.hero {
+text-align: center;
+padding: 80px 20px;
+}
+.hero h1{
+    font-size: 45px;
+    color: #d32f2f;
+}
+.hero p{
+    margin: 20px 0;
+    font-size: 20px;
+}
+.hero button{
+    padding: 12px 25px;
+    margin: 10px;
+    border: none;
+    background: #d32f2f;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.hero button:hover{
+    background: #b71c1c;
+}
+.stats{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+}
+.card{
+    background: white;
+    width: 220px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+}
+.card h2{
+    color:#d32f2f;
+}
+.about{
+    padding: 50px;
+    text-align: center;
+}
+.about h2{
+    color: #d32f2f;
+    margin-bottom: 20px;
+}
+footer{
+    background: #d32f2f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+/*Register page*/
+.register{
+    width: 500px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+}
+.register h1{
+    text-align: center;
+    color: #d32f2f;
+}
+.register p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.register label{
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.register input,
+.register select,
+.register textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.register button{
+    margin-top: 20px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #d32f2f;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.register button:hover{
+    background: #b71c1c;
+}
+/*search page*/
+.search{
+    width: 500px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+}
+.search h1{
+    text-align: center;
+    color: #d32f2f;
+}
+.search p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.search label{
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.search input
+.search select{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.search button{
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #d32f2f;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.search button:hover{
+    background: #b71c1c;
+}
+/*Results Page*/
+.results{
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+}
+.results h1{
+    color:#d32f2f
+}
+.donor-card{
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 400px;
+    border-radius:10px ;
+    box-shadow: 0 0 10px lightgray;
+    text-align: left;
+}
+.donor-card h2{
+    color: #d32f2f;
+}
+.donor-card button{
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #d32f2f;
+    color: white;
+    cursor: pointer;
+}
+.donor-card button:hover{
+    background: #b71c1c;
+}
+.results a button{
+    margin-top: 20px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #1976d2;
+    color: white;
+    cursor: pointer;
+}
+/*Admin Page*/
+.admin{
+    width: 400px;
+    margin: 60px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+}
+.admin h1{
+    text-align: center;
+    color: #d32f2f;
+}
+.admin p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.admin label{
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.admin input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.admin button{
+    margin-top: 20px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #d32f2f;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.admin button:hover{
+    background: #b71c1c;
+}
+/*Admin Page*/
+.admin{
+    width: 400px;
+    margin: 60px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+}
+.admin h1{
+    text-align: center;
+    color: #d32f2f;
+}
+.admin p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.admin label{
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+nav h2 a{
+    color: white;
+    text-decoration: none;
+}
+.admin input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.admin button{
+    margin-top: 20px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #d32f2f;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.admin button:hover{
+    background: #b71c1c;
+}
+.stats{
+    display:flex;
+    gap:20px;
+    margin:20px 0;
+}
+
+.card{
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.2);
+    text-align:center;
+    width:220px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    form {
+        width: 95%;
+        margin: auto;
+    }
+
+    input,
+    select,
+    button,
+    textarea {
+        width: 100%;
+        margin-bottom: 12px;
+        box-sizing: border-box;
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    h1,
+    h2,
+    h3 {
+        text-align: center;
+    }
+
+    .search,
+    .register,
+    .admin,
+    .dashboard {
+        padding: 15px;
+    }
+}

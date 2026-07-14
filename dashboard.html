@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - LifeLink</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h2>❤️LifeLink</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="search.html">Search</a></li>
+            <li><a href="admin.html">Admin</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="Dashboard">
+        <h1>📋 Registered Blood Donors</h1>
+        <div class="stats">
+    <div class="card">
+        <h3>Total Donors</h3>
+        <h2 id="totalDonors">0</h2>
+    </div>
+
+    <div class="card">
+        <h3>Available Donors</h3>
+        <h2 id="availableDonors">0</h2>
+    </div>
+</div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Blood Group </th>
+                    <th>Location</th>
+                    <th>Phone</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="donorTable"></tbody>
+        </table>
+    </section>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
