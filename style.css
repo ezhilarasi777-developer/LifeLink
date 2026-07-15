@@ -379,3 +379,29 @@ nav h2 a{
         padding: 15px;
     }
 }
+/* Mobile View */
+@media (max-width: 768px) {
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.container {
+    width: 95%;
+    padding: 10px;
+}
+
+button {
+    width: 100%;
+}
+}
