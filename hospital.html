@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Dashboard - LifeLink</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🏥 Hospital Dashboard</h1>
+
+<div class="dashboard">
+
+    <div class="card">
+        <h2>Total Donors</h2>
+        <h3 id="totalDonors">0</h3>
+    </div>
+
+    <div class="card">
+        <h2>Emergency Requests</h2>
+        <h3 id="totalRequests">0</h3>
+    </div>
+
+</div>
+
+<h2>🩸 Emergency Blood Requests</h2>
+
+<table border="1" width="100%">
+<thead>
+<tr>
+<th>Patient</th>
+<th>Blood Group</th>
+<th>Hospital</th>
+<th>Location</th>
+<th>Status</th>
+</tr>
+</thead>
+
+<tbody id="requestTable">
+
+</tbody>
+
+</table>
+
+<script type="module" src="hospital.js"></script>
+
+</body>
+</html>
