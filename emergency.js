@@ -4,6 +4,8 @@ import {
   addDoc,
   serverTimestamp
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+ import { sendNotification } from "./notification.js";
+
 
 const form = document.getElementById("bloodRequestForm");
 
@@ -19,7 +21,7 @@ form.addEventListener("submit", async (e) => {
     try {
 
         await addDoc(collection(db, "EmergencyRequests"), {
-
+           
             patientName,
             bloodGroup,
             hospital,
@@ -28,6 +30,7 @@ form.addEventListener("submit", async (e) => {
             createdAt: serverTimestamp()
 
         });
+        await sendNotification(bloodGroup,hospital,location);
 
         alert("Emergency Blood Request Sent Successfully!");
 

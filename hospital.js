@@ -2,7 +2,9 @@ import { db } from "./firebase.js";
 
 import {
 collection,
-getDocs
+getDocs,
+query,
+orderBy
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 async function loadDashboard(){
@@ -46,6 +48,25 @@ table.innerHTML += `
 
 });
 
+// Notifications
+const notificationSnapshot = await getDocs(
+    query(
+        collection(db, "Notifications"),
+        orderBy("createdAt", "desc")
+    )
+);
+
+const notificationList = document.getElementById("notificationList");
+
+notificationSnapshot.forEach((doc) => {
+
+    const data = doc.data();
+
+    notificationList.innerHTML += `
+        <li>${data.message}</li>
+    `;
+
+});
 }
 
 loadDashboard();
