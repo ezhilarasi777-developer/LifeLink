@@ -34,6 +34,24 @@
                 <option>O+</option>
                 <option>O-</option>
             </select>
+            <select id="bloodGroup">
+    <option>A+</option>
+    <option>A-</option>
+    <option>B+</option>
+    <option>B-</option>
+    <option>O+</option>
+    <option>O-</option>
+    <option>AB+</option>
+    <option>AB-</option>
+</select>
+
+<button onclick="predictBloodAvailability(document.getElementById('bloodGroup').value)">
+    🤖 Predict Availability
+</button>
+
+<p id="prediction"></p>
+
+<script type="module" src="aiPrediction.js"></script>
             <label >Location</label>
             <input type="text" id="searchLocation" placeholder="Enter City (optional)"><br><br>
             <button type="button" id="searchBtn">🔍 Search</button>
