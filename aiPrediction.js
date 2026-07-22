@@ -1,8 +1,6 @@
 // aiPrediction.js
 
-import { db } from "./firebase.js";
-import { collection, getDocs } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
-
+import { db, collection, getDocs } from "./firebase.js";
 async function predictBloodAvailability(bloodGroup) {
     const snapshot = await getDocs(collection(db, "donors"));
 
