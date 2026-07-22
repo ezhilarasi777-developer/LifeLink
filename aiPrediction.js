@@ -1,17 +1,33 @@
+// aiPrediction.js
+
 import { db } from "./firebase.js";
-import {
-  collection,
-  getDocs
-} from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
+import { collection, getDocs } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
 
-const notificationList = document.getElementById("notificationList");
+async function predictBloodAvailability(bloodGroup) {
+    const snapshot = await getDocs(collection(db, "donors"));
 
-const snapshot = await getDocs(collection(db, "Notifications"));
+    let count = 0;
 
-snapshot.forEach((doc) => {
-    const data = doc.data();
+    snapshot.forEach((doc) => {
+        const donor = doc.data();
 
-    notificationList.innerHTML += `
-        <li>${data.message}</li>
-    `;
-});
+        if (donor.bloodGroup === bloodGroup) {
+            count++;
+        }
+    });
+
+    let prediction = "";
+
+    if (count >= 10) {
+        prediction = "🟢 High Availability";
+    } else if (count >= 5) {
+        prediction = "🟡 Medium Availability";
+    } else {
+        prediction = "🔴 Low Availability";
+    }
+
+    document.getElementById("prediction").innerHTML =
+        `AI Prediction: <b>${prediction}</b><br>Total Donors: ${count}`;
+}
+
+globalThis.predictBloodAvailability = predictBloodAvailability;
