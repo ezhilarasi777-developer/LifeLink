@@ -28,4 +28,4 @@ async function predictBloodAvailability(bloodGroup) {
         `AI Prediction: <b>${prediction}</b><br>Total Donors: ${count}`;
 }
 
-globalThis.predictBloodAvailability = predictBloodAvailability;
+window.predictBloodAvailability = predictBloodAvailability;
