@@ -414,3 +414,20 @@ text-align:center;
     padding:2px 6px;
     font-size:12px;
 }
+.search form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.search select,
+.search input{
+    width:100%;
+    padding:10px;
+}
+
+.search button{
+    width:100%;
+    padding:12px;
+    margin:0;
+}
